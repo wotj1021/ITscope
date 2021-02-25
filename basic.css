@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body {font-size: 12px; font-family: '돋음', Dotum, Arial, sans-serif; background-color: #e4e4e4; background: url('img/basic_bg01.gif');}
+.clearfix:after {display: block; content: ''; clear: both;}
+    /* clear: both를 하고싶다면 저 class태그를 써주면 된다. */
+#wrap {width: 100%; height: 700px; background: URL('img/basic_bg02.gif') repeat-y 50% 0;}
+
+#inner_wrap {position: relative; width: 1230px; margin: auto; background: url('img/header_bg01.gif') repeat-y;}
+    #header {text-align: center; width: 183px; float: left; height: 100%;}
+        .menu {width: 183px; padding-top: 15px 0; background: url('img/nav_bg01.jpg') no-repeat;}
+        /* sub_menu리스트 */
+        .menu .sub_menu {display: none;}
+        .menu .sub_menu li {border-bottom: 1px solid #ccc; text-align: left; background: #fff;}
+        .menu .sub_menu li:hover {background: #ccc;}
+        .menu .sub_menu li:last-child {border-bottom: none;}
+        .menu .sub_menu a {display: block; padding: 10px 0 10px 20px; color: #888; font-size: 12px; font-weight: bold;}
+
+    #main_contents {width: 1037px; padding-bottom: 20px; float: left;}
+        .mainvisual {position: relative;}
+
+        ul.slidesjs-pagination{position: absolute; bottom: 100px; left: 50px; z-index: 200;}
+        li.slidesjs-pagination-item{float: left; margin-right: 5px;}
+        li.slidesjs-pagination-item a{display: block; width: 19px; height: 19px;background: #000; background: url('img/mainvisual_tab.png'); text-indent: -9999px;}
+        li.slidesjs-pagination-item a.active{background: url('img/mainvisual_tab_on.png');}
+
+        .gridcontents_wrap {position: relative; margin-left: 40px; margin-top: -80px; z-index: 150;}
+            .gridcontents {float: left; margin: 0 8px 8px 0;}
+            .gridcontents a {}
+            .gridcontents img {}
+
+            .noticepr {width: 243px; height: 172px; margin-right: 0;}
+            .notice {background: url(img/gridcontents_notice_bg01.jpg);}
+            .pr {background: url(img/gridcontents_pr_bg01.jpg);}
+                .noticepr_title {margin: 20px;}
+                .noticepr_title h3 {float: left;}
+                .noticepr_title img {float: right;}
+
+                .noticepr_menus {margin: 0 20px 20px 20px;}
+                .noticepr_menus li {color: #000; font-size: 13px;}
+                .noticepr_menus a {font-weight: bold; line-height: 25px; float: left; display: block; width: 130px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+                    /* white-space: nowrap; overflow: hidden; text-overflow: ellipsis; = 말줄임표 세트 */
+                .noticepr_menus p {line-height: 25px; float: right;}
+                .notice a, .notice p {color: rgb(230, 230, 230)}
+                .notice a:hover {color: rgba(255, 255, 255)}
+                .pr a, .pr p {color: rgb(112, 112, 112);}
+                .pr a:hover {color: rgba(0, 0, 0, 1);}
+
+    #footer {position: absolute; left: 0; bottom: 25px;}
+    #footer h2 {height: 26px; background: url('img/footer_menu_bg01.gif') no-repeat 0 100%;}
+
+    #footer .footer_menu {margin-bottom: 9px; height: 26px; padding: 7px 0 0 10px; background: url('img/footer_menu_bg01.gif') no-repeat 0 100%;} 
+    #footer .footer_menu li {float: left; padding: 0 8px 0 7px; background: url('img/footer_menu_bar.gif') no-repeat 100% 0;}
+    #footer .footer_menu li:last-child {background: none;}
+
+    #footer .familysites {text-align: center}
+    #footer .familysites:hover .familysites_list {display: block;}
+    #footer .familysites h3 {}
+    #footer .familysites .familysites_list {position: relative; display: none; width: 146px; margin: 0 auto;}
+    #footer .familysites .familysites_list ul {border: 1px solid #44a8ce; top: -1.5px; position: absolute; height: 60px; left: -1; background: #3c98c1; width: 146px; margin: 0 auto;}
+    #footer .familysites .familysites_list li {text-align: left; padding: 3px;}
+    #footer .familysites .familysites_list li:hover a {color: #3c98c1; background: #ffffff;}
+    #footer .familysites .familysites_list a {display: block; color: #fff; font-size: 12px; width: 140px; line-height: 20px;}
+    #footer .address {text-align: center;}
+    #footer .address img {margin: 15px 0;}
